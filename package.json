@@ -4,6 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "start:prod": "cd server && npm start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
@@ -14,5 +15,16 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericjcili/MERN-Challenge-Book-Search-Engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericjcili/MERN-Challenge-Book-Search-Engine/issues"
+  },
+  "homepage": "https://github.com/ericjcili/MERN-Challenge-Book-Search-Engine#readme",
   "description": ""
 }
